@@ -1,3 +1,7 @@
+:root {
+	--rows: 0;
+}
+
 * {
 	margin: 0px;
 	padding: 0px;
@@ -5,9 +9,8 @@
 
 .sketch-container {
 	display: grid;
-	grid-template-columns: repeat(16, 1fr);
-	grid-template-rows: repeat(16, 1fr);
-
+	grid-template-columns: repeat(var(--rows), 1fr);
+	grid-template-rows: repeat(var(--rows), 1fr);
 	width: 960px;
 	height: 960px;
 }

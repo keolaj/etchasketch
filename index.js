@@ -1,4 +1,7 @@
-for (let i = 0; i < 16 * 16; ++i) {
+let numRows = parseInt(prompt("enter squares per side of grid"));
+document.documentElement.style.setProperty("--rows", numRows);
+
+for (let i = 0; i < numRows * numRows; ++i) {
 	let div = document.createElement('div');
 	div.style = "background-color: grey; margin: 1px;"
 	div.addEventListener("mouseover", () => {
